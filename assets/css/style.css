@@ -22,11 +22,14 @@ Body {
     background-image: url(../images/developer.jpg);
     background-size:cover;
     background-position: center;
+    background-attachment: fixed;
 
 }
 #header .container {
     padding: 10px 10%;
     background: var(--heading);
+    position: sticky;
+    top: 0;
 }
 nav{
     display: flex;
@@ -261,4 +264,62 @@ nav ul li a:hover::after{
   .service-box .s-description {
     color: #4e4e4e;
   }
+  /* ---------------------- counter ----------------- */
+
+  #counter {
+    background-image: url(../images/counters-bg.jpg);
+    height: 432px;
+  }
+  .bg-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+  }
+  .overlay-mf {
+    background-color: #0078ff;
+  }
   
+  .overlay-mf {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+  }
+  .paralax-mf {
+    position: relative;
+    padding: 8rem 0;
+  }
+  .paralax-mf {
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+  }
+  #counter .container {
+    margin-top: 60px;
+    padding: 80px 10%;
+  }
+  .counter-box {
+    color: #fff;
+    text-align: center;
+  }
+  .counter-ico {
+    margin-bottom: 1rem;
+  }
+  
+  .counter-ico .ico-circle {
+    height: 60px;
+    width: 60px;
+    line-height: 1.5;
+    box-shadow: 0 0 0 10px #cde1f8;
+  }
+  
+  .counter-num .counter {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  #counter .row {
+    display: flex;
+    justify-content: space-around;
+  }
