@@ -88,7 +88,7 @@ nav ul li a:hover::after{
 
 /* --------------- About Section --------------- */
 #about {
-    padding: 80px 10%;
+    padding: 70px 10%;
 }
 #about .container .row {
     background: var(--white);
@@ -96,7 +96,7 @@ nav ul li a:hover::after{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 70px 30px;
+    padding: 50px 30px;
 }
 .about-col-1 {
     flex-basis: 50%;
@@ -259,6 +259,7 @@ nav ul li a:hover::after{
     text-transform: uppercase;
     text-align: center;
     padding: 0.4rem 0;
+    font-weight: 500;
   }
   
   .service-box .s-description {
@@ -416,4 +417,135 @@ nav ul li a:hover::after{
 }
 .circle-img {
   border-radius: 50%;
+}
+/* ------------- Blog -------------------- */
+#blog .container {
+  padding: 70px 10%;
+}
+.row-blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blog-card{
+  margin-bottom: 1rem;
+  background: var(--white);
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  border: solid 0.5px rgba(0, 0, 0, 0.1);
+}
+.card-img img {
+  width: 100%;
+}
+.card-body {
+  position: relative;
+  padding: 16px;
+  
+}
+.card-content h2 {
+  font-size: 1.3rem;
+  color: var(--heading);
+  font-weight: 600;
+  transition: 0.5s;
+  margin: 1rem 0 0.5rem 0;
+}
+.card-content h2:hover{
+  color: var(--blue);
+}
+#blog .description p {
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  color: var(--paragraph);
+  letter-spacing: 0.5px;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+  border-top: solid 0.5px rgba(0, 0, 0, 0.1);
+}
+.card-category-box {
+  position: absolute;
+  text-align: center;
+  top: -16px;
+  left: 15px;
+  right: 15px;
+  line-height: 25px;
+  overflow: hidden;
+}
+.card-category {
+  display: inline-block;
+  color: #fff;
+  padding: 0 15px 5px;
+  overflow: hidden;
+  background-color: #0078ff;
+  border-radius: 4px;
+}
+.category {
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1px;
+  margin-bottom: 0;
+}
+.card-footer .post-author {
+  display: flex;
+  gap: 2px;
+}
+.card-footer .post-date {
+  color: #4e4e4e;
+  float: right;
+}
+.card-footer .post-date i {
+  margin-right: 5px;
+}
+.avatar {
+  width: 32px;
+  height: 32px;
+  margin-right: 4px;
+  overflow: hidden;
+}
+.rounded-circle {
+  border-radius: 50%!important;
+}
+/* ----------------- contact ------------- */
+#contact {
+
+}
+#contact .container {
+  padding: 70px 10%;
+}
+#contact .row {
+
+  padding: 48px;
+  background: var(--white);
+}
+form input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+}
+button {
+  margin-top: 10px;
+  background-color: var(--blue);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 17px;
 }
