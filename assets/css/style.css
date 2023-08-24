@@ -395,3 +395,25 @@ nav ul li a:hover::after{
   font-weight: 500;
   font-size: 1.2rem;
 }
+/* ------------- Testimonial---------------- */
+#testimonials {
+  background-image: url(../images/overlay-bg.jpg);
+  height: 432px;
+}
+#testimonials .container {
+  padding: 70px 10%;
+}
+.t-box {
+  color: var(--white);
+  text-align: center;
+
+}
+.author {
+  margin: 16px 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+}
+.circle-img {
+  border-radius: 50%;
+}
