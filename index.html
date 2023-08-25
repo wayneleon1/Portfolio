@@ -17,591 +17,608 @@
     <title>Personal Portfolio Website</title>
   </head>
   <body>
-    <!-- ------------ Hero Section -------- -->
-    <div id="header">
-      <div class="container">
-        <nav>
-          <h1 class="logo">
-            <a href="index.html">Codewith<span>Leon</span></a>
-          </h1>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#work">Works</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+    <header>
+      <!-- ------------ Hero Section -------- -->
+      <div id="header">
+        <div class="container">
+          <nav>
+            <h1 class="logo">
+              <a href="index.html">Codewith<span>Leon</span></a>
+            </h1>
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#work">Works</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+        </div>
+        <div class="header-text">
+          <h1>I am Rurangwa Leon</h1>
+          <p>Full stake Developer</p>
+        </div>
       </div>
-      <div class="header-text">
-        <h1>I am Rurangwa Leon</h1>
-        <p>Full stake Developer</p>
-      </div>
-    </div>
+    </header>
     <!-- ---------------- About Section ---------------- -->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <div class="row-content">
-              <div class="about-img">
-                <img src="/assets/images/prf-150.jpg" alt="" />
+    <main>
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <div class="row-content">
+                <div class="about-img">
+                  <img src="/assets/images/prf-150.jpg" alt="" />
+                </div>
+                <div class="about-info">
+                  <p>
+                    <span class="title-s">Name: </span>
+                    <span>Rurangwa Leo</span>
+                  </p>
+                  <p>
+                    <span class="title-s">Profile: </span>
+                    <span>Full stack developer</span>
+                  </p>
+                  <p>
+                    <span class="title-s">Email: </span>
+                    <span>rurangwaleon10@gmail.com</span>
+                  </p>
+                  <p>
+                    <span class="title-s">Phone: </span>
+                    <span>(+250) 782-9779-976</span>
+                  </p>
+                </div>
               </div>
-              <div class="about-info">
-                <p>
-                  <span class="title-s">Name: </span>
-                  <span>Rurangwa Leo</span>
-                </p>
-                <p>
-                  <span class="title-s">Profile: </span>
-                  <span>Full stack developer</span>
-                </p>
-                <p>
-                  <span class="title-s">Email: </span>
-                  <span>rurangwaleon10@gmail.com</span>
-                </p>
-                <p>
-                  <span class="title-s">Phone: </span>
-                  <span>(+250) 782-9779-976</span>
-                </p>
+              <div class="skill-mf">
+                <p class="title-s">Skill</p>
+                <div class="skill-item">
+                  <span>HTML</span> <span class="pull-right">85%</span>
+                  <div class="progress-container">
+                    <div
+                      class="progress-bar"
+                      style="width: 85%; height: 100%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>CSS3</span> <span class="pull-right">75%</span>
+                  <div class="progress-container">
+                    <div
+                      class="progress-bar"
+                      style="width: 75%; height: 100%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>PHP</span> <span class="pull-right">50%</span>
+                  <div class="progress-container">
+                    <div
+                      class="progress-bar"
+                      style="width: 50%; height: 100%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
+                  <div class="progress-container">
+                    <div
+                      class="progress-bar"
+                      style="width: 90%; height: 100%"
+                    ></div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="skill-mf">
-              <p class="title-s">Skill</p>
-
-              <div class="skill-item">
-                <span>HTML</span> <span class="pull-right">85%</span>
-                <div class="progress-container">
-                  <div
-                    class="progress-bar"
-                    style="width: 85%; height: 100%"
-                  ></div>
-                </div>
+            <div class="about-col-2">
+              <div class="title-box-2">
+                <h5 class="title-left">About me</h5>
               </div>
-
-              <div class="skill-item">
-                <span>CSS3</span> <span class="pull-right">75%</span>
-                <div class="progress-container">
-                  <div
-                    class="progress-bar"
-                    style="width: 75%; height: 100%"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span>PHP</span> <span class="pull-right">50%</span>
-                <div class="progress-container">
-                  <div
-                    class="progress-bar"
-                    style="width: 50%; height: 100%"
-                  ></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
-                <div class="progress-container">
-                  <div
-                    class="progress-bar"
-                    style="width: 90%; height: 100%"
-                  ></div>
-                </div>
-              </div>
+              <p class="lead">
+                Curabitur non nulla sit amet nisl tempus convallis quis ac
+                lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor
+                at sem. Praesent sapien massa, convallis a pellentesque nec,
+                egestas non nisi. Nulla porttitor accumsan tincidunt.
+              </p>
+              <p class="lead">
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Vivamus suscipit tortor eget felis porttitor volutpat.
+                Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+                dui. porttitor at sem.
+              </p>
+              <p class="lead">
+                Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium
+                ut lacinia in, elementum id enim. Nulla porttitor accumsan
+                tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh
+                pulvinar a.
+              </p>
             </div>
-          </div>
-          <div class="about-col-2">
-            <div class="title-box-2">
-              <h5 class="title-left">About me</h5>
-            </div>
-            <p class="lead">
-              Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-              Praesent sapien massa, convallis a pellentesque nec, egestas non
-              nisi. Nulla porttitor accumsan tincidunt.
-            </p>
-            <p class="lead">
-              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-              Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum
-              ac diam sit amet quam vehicula elementum sed sit amet dui.
-              porttitor at sem.
-            </p>
-            <p class="lead">
-              Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut
-              lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt.
-              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-            </p>
           </div>
         </div>
       </div>
-    </div>
-    <div id="service">
-      <div class="container">
-        <div class="row">
+      <div id="service">
+        <div class="container">
+          <div class="row">
+            <div class="title-box text-center">
+              <h3 class="title-a">Services</h3>
+              <p class="subtitle-a">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+          <div class="cards-row">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="fa-solid fa-code"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Web Design</h2>
+                <p class="s-description text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                  adipisci eaque autem fugiat! Quia, provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </div>
+            </div>
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"
+                  ><i class="fa-solid fa-database"></i
+                ></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Web Development</h2>
+                <p class="s-description text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                  adipisci eaque autem fugiat! Quia, provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </div>
+            </div>
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"
+                  ><i class="fa-solid fa-desktop"></i
+                ></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Graphic Design</h2>
+                <p class="s-description text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                  adipisci eaque autem fugiat! Quia, provident vitae! Magni
+                  tempora perferendis eum non provident.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="counter" class="paralax-mf bg-image">
+        <div class="overlay-mf">
+          <div class="container">
+            <div class="row">
+              <div class="counter-box">
+                <div class="counter-ico">
+                  <span class="ico-circle"
+                    ><i class="fa-solid fa-check"></i
+                  ></span>
+                </div>
+                <div class="counter-num">
+                  <p
+                    data-purecounter-start="0"
+                    data-purecounter-end="40"
+                    data-purecounter-duration="1"
+                    class="counter purecounter"
+                  >
+                    40
+                  </p>
+                  <span class="counter-text">WORKS COMPLETED</span>
+                </div>
+              </div>
+              <div class="counter-box">
+                <div class="counter-ico">
+                  <span class="ico-circle"
+                    ><i class="fa-solid fa-code"></i
+                  ></span>
+                </div>
+                <div class="counter-num">
+                  <p
+                    data-purecounter-start="0"
+                    data-purecounter-end="5"
+                    data-purecounter-duration="1"
+                    class="counter purecounter"
+                  >
+                    5
+                  </p>
+                  <span class="counter-text">YEARS OF EXPERIENCE</span>
+                </div>
+              </div>
+              <div class="counter-box">
+                <div class="counter-ico">
+                  <span class="ico-circle"
+                    ><i class="fa-solid fa-users"></i
+                  ></span>
+                </div>
+                <div class="counter-num">
+                  <p
+                    data-purecounter-start="0"
+                    data-purecounter-end="36"
+                    data-purecounter-duration="1"
+                    class="counter purecounter"
+                  >
+                    36
+                  </p>
+                  <span class="counter-text">TOTAL CLIENTS</span>
+                </div>
+              </div>
+              <div class="counter-box">
+                <div class="counter-ico">
+                  <span class="ico-circle"
+                    ><i class="fa-solid fa-award"></i
+                  ></span>
+                </div>
+                <div class="counter-num">
+                  <p
+                    data-purecounter-start="0"
+                    data-purecounter-end="7"
+                    data-purecounter-duration="1"
+                    class="counter purecounter"
+                  >
+                    7
+                  </p>
+                  <span class="counter-text">CERTIFICATE GAIN</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="work">
+        <div class="container">
           <div class="title-box text-center">
-            <h3 class="title-a">Services</h3>
+            <h3 class="title-a">PORTFOLIO</h3>
             <p class="subtitle-a">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </p>
             <div class="line-mf"></div>
           </div>
-        </div>
-        <div class="cards-row">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="fa-solid fa-code"></i></span>
+          <div class="work-row">
+            <div class="work-box">
+              <a
+                href="assets/images/work-1.jpg"
+                data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+              >
+                <div class="work-img">
+                  <img src="assets/images/work-1.jpg" alt="" />
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="work-col-1">
+                  <h2 class="w-title">Lorem impsum dolor</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Web Design</span> /
+                    <span class="w-date">18 Sep. 2018</span>
+                  </div>
+                </div>
+                <div class="work-col-2">
+                  <div class="w-like">
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="service-content">
-              <h2 class="s-title">Web Design</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                adipisci eaque autem fugiat! Quia, provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
+            <div class="work-box">
+              <a
+                href="assets/images/work-2.jpg"
+                data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+              >
+                <div class="work-img">
+                  <img src="assets/images/work-2.jpg" alt="" />
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="work-col-1">
+                  <h2 class="w-title">Loreda Cuno Nere</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Web Design</span> /
+                    <span class="w-date">18 Sep. 2018</span>
+                  </div>
+                </div>
+                <div class="work-col-2">
+                  <div class="w-like">
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"
-                ><i class="fa-solid fa-database"></i
-              ></span>
+            <div class="work-box">
+              <a
+                href="assets/images/work-3.jpg"
+                data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+              >
+                <div class="work-img">
+                  <img src="assets/images/work-3.jpg" alt="" />
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="work-col-1">
+                  <h2 class="w-title">Mavrito Lana Dere</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Web Design</span> /
+                    <span class="w-date">18 Sep. 2018</span>
+                  </div>
+                </div>
+                <div class="work-col-2">
+                  <div class="w-like">
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="service-content">
-              <h2 class="s-title">Web Development</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                adipisci eaque autem fugiat! Quia, provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
+            <div class="work-box">
+              <a
+                href="assets/images/work-4.jpg"
+                data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+              >
+                <div class="work-img">
+                  <img src="assets/images/work-4.jpg" alt="" />
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="work-col-1">
+                  <h2 class="w-title">Bindo Laro Cado</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Web Design</span> /
+                    <span class="w-date">18 Sep. 2017</span>
+                  </div>
+                </div>
+                <div class="work-col-2">
+                  <div class="w-like">
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"
-                ><i class="fa-solid fa-desktop"></i
-              ></span>
+            <div class="work-box">
+              <a
+                href="assets/images/work-5.jpg"
+                data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+              >
+                <div class="work-img">
+                  <img src="assets/images/work-5.jpg" alt="" />
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="work-col-1">
+                  <h2 class="w-title">Studio Lena Mado</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Web Design</span> /
+                    <span class="w-date">18 Sep. 2023</span>
+                  </div>
+                </div>
+                <div class="work-col-2">
+                  <div class="w-like">
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="service-content">
-              <h2 class="s-title">Graphic Design</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                adipisci eaque autem fugiat! Quia, provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
+            <div class="work-box">
+              <a
+                href="assets/images/work-6.jpg"
+                data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+              >
+                <div class="work-img">
+                  <img src="assets/images/work-6.jpg" alt="" />
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="work-col-1">
+                  <h2 class="w-title">Studio Big Bang</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Web Design</span> /
+                    <span class="w-date">18 Sep. 2020</span>
+                  </div>
+                </div>
+                <div class="work-col-2">
+                  <div class="w-like">
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="counter" class="paralax-mf bg-image">
-      <div class="overlay-mf">
+      <!-- ------------Testimonials Section --------- -->
+      <div id="testimonials" class="paralax-mf bg-image">
+        <div class="overlay-mf">
+          <div class="container">
+            <div class="row">
+              <div class="t-box">
+                <div class="t-img">
+                  <img
+                    src="assets/images/testimonial-2.jpg"
+                    class="circle-img"
+                  />
+                  <div class="author"><span>Xavi Alonso</span></div>
+                </div>
+                <div class="description">
+                  <p>
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                    sem. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="blog">
+        <div class="container">
+          <div class="title-box text-center">
+            <h3 class="title-a">BLOG</h3>
+            <p class="subtitle-a">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+          <div class="row-blog">
+            <div class="blog-card">
+              <div class="card-img">
+                <img src="assets/images/post-1.jpg" alt="" />
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Travel</h6>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2>See more ideas about Travel</h2>
+                </div>
+                <div class="description">
+                  <p>
+                    Proin eget tortor risus. Pellentesque in ipsum id orci porta
+                    dapibus. Praesent sapien massa, convallis a pellentesque
+                    nec, egestas non nisi.
+                  </p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <img
+                    src="assets/images/testimonial-2.jpg"
+                    alt=""
+                    class="avatar rounded-circle"
+                  />
+                  <span> Morgan Freeman</span>
+                </div>
+                <div class="post-date">
+                  <i class="fa-regular fa-clock"></i><span>10 min</span>
+                </div>
+              </div>
+            </div>
+            <div class="blog-card">
+              <div class="card-img">
+                <img src="assets/images/post-2.jpg" alt="" />
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Health</h6>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2>See more ideas about Travel</h2>
+                </div>
+                <div class="description">
+                  <p>
+                    Proin eget tortor risus. Pellentesque in ipsum id orci porta
+                    dapibus. Praesent sapien massa, convallis a pellentesque
+                    nec, egestas non nisi.
+                  </p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <img
+                    src="assets/images/testimonial-2.jpg"
+                    alt=""
+                    class="avatar rounded-circle"
+                  />
+                  <span> Morgan Freeman</span>
+                </div>
+                <div class="post-date">
+                  <i class="fa-regular fa-clock"></i><span>10 min</span>
+                </div>
+              </div>
+            </div>
+            <div class="blog-card">
+              <div class="card-img">
+                <img src="assets/images/post-3.jpg" alt="" />
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Web Design</h6>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2>See more ideas about Travel</h2>
+                </div>
+                <div class="description">
+                  <p>
+                    Proin eget tortor risus. Pellentesque in ipsum id orci porta
+                    dapibus. Praesent sapien massa, convallis a pellentesque
+                    nec, egestas non nisi.
+                  </p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <img
+                    src="assets/images/testimonial-2.jpg"
+                    alt=""
+                    class="avatar rounded-circle"
+                  />
+                  <span> Morgan Freeman</span>
+                </div>
+                <div class="post-date">
+                  <i class="fa-regular fa-clock"></i><span>10 min</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------------- contact Section ------------ -->
+      <div id="contact">
         <div class="container">
           <div class="row">
-            <div class="counter-box">
-              <div class="counter-ico">
-                <span class="ico-circle"
-                  ><i class="fa-solid fa-check"></i
-                ></span>
+            <div class="col-1">
+              <div class="title-box">
+                <h5 class="title-left">Send message me</h5>
               </div>
-              <div class="counter-num">
-                <p
-                  data-purecounter-start="0"
-                  data-purecounter-end="40"
-                  data-purecounter-duration="1"
-                  class="counter purecounter"
-                >
-                  40
-                </p>
-                <span class="counter-text">WORKS COMPLETED</span>
+              <div class="contact-form">
+                <form>
+                  <div><input type="text" placeholder="Your Name" /></div>
+                  <div><input type="text" placeholder="Your E-mail" /></div>
+                  <div><input type="text" placeholder="Your Subject" /></div>
+                  <div>
+                    <textarea placeholder="Your Message"></textarea>
+                  </div>
+                  <div class="send-message"><button>Send Message</button></div>
+                </form>
               </div>
             </div>
-            <div class="counter-box">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="fa-solid fa-code"></i></span>
-              </div>
-              <div class="counter-num">
-                <p
-                  data-purecounter-start="0"
-                  data-purecounter-end="5"
-                  data-purecounter-duration="1"
-                  class="counter purecounter"
-                >
-                  5
-                </p>
-                <span class="counter-text">YEARS OF EXPERIENCE</span>
-              </div>
-            </div>
-            <div class="counter-box">
-              <div class="counter-ico">
-                <span class="ico-circle"
-                  ><i class="fa-solid fa-users"></i
-                ></span>
-              </div>
-              <div class="counter-num">
-                <p
-                  data-purecounter-start="0"
-                  data-purecounter-end="36"
-                  data-purecounter-duration="1"
-                  class="counter purecounter"
-                >
-                  36
-                </p>
-                <span class="counter-text">TOTAL CLIENTS</span>
-              </div>
-            </div>
-            <div class="counter-box">
-              <div class="counter-ico">
-                <span class="ico-circle"
-                  ><i class="fa-solid fa-award"></i
-                ></span>
-              </div>
-              <div class="counter-num">
-                <p
-                  data-purecounter-start="0"
-                  data-purecounter-end="7"
-                  data-purecounter-duration="1"
-                  class="counter purecounter"
-                >
-                  7
-                </p>
-                <span class="counter-text">CERTIFICATE GAIN</span>
+            <div class="col-2">
+              <div class="title-box">
+                <h5 class="title-left">Get in Touch</h5>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div id="work">
-      <div class="container">
-        <div class="title-box text-center">
-          <h3 class="title-a">PORTFOLIO</h3>
-          <p class="subtitle-a">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          </p>
-          <div class="line-mf"></div>
-        </div>
-        <div class="work-row">
-          <div class="work-box">
-            <a
-              href="assets/images/work-1.jpg"
-              data-gallery="portfolioGallery"
-              class="portfolio-lightbox"
-            >
-              <div class="work-img">
-                <img src="assets/images/work-1.jpg" alt="" />
-              </div>
-            </a>
-            <div class="work-content">
-              <div class="work-col-1">
-                <h2 class="w-title">Lorem impsum dolor</h2>
-                <div class="w-more">
-                  <span class="w-ctegory">Web Design</span> /
-                  <span class="w-date">18 Sep. 2018</span>
-                </div>
-              </div>
-              <div class="work-col-2">
-                <div class="w-like">
-                  <i class="fa-solid fa-circle-plus"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="work-box">
-            <a
-              href="assets/images/work-2.jpg"
-              data-gallery="portfolioGallery"
-              class="portfolio-lightbox"
-            >
-              <div class="work-img">
-                <img src="assets/images/work-2.jpg" alt="" />
-              </div>
-            </a>
-            <div class="work-content">
-              <div class="work-col-1">
-                <h2 class="w-title">Loreda Cuno Nere</h2>
-                <div class="w-more">
-                  <span class="w-ctegory">Web Design</span> /
-                  <span class="w-date">18 Sep. 2018</span>
-                </div>
-              </div>
-              <div class="work-col-2">
-                <div class="w-like">
-                  <i class="fa-solid fa-circle-plus"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="work-box">
-            <a
-              href="assets/images/work-3.jpg"
-              data-gallery="portfolioGallery"
-              class="portfolio-lightbox"
-            >
-              <div class="work-img">
-                <img src="assets/images/work-3.jpg" alt="" />
-              </div>
-            </a>
-            <div class="work-content">
-              <div class="work-col-1">
-                <h2 class="w-title">Mavrito Lana Dere</h2>
-                <div class="w-more">
-                  <span class="w-ctegory">Web Design</span> /
-                  <span class="w-date">18 Sep. 2018</span>
-                </div>
-              </div>
-              <div class="work-col-2">
-                <div class="w-like">
-                  <i class="fa-solid fa-circle-plus"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="work-box">
-            <a
-              href="assets/images/work-4.jpg"
-              data-gallery="portfolioGallery"
-              class="portfolio-lightbox"
-            >
-              <div class="work-img">
-                <img src="assets/images/work-4.jpg" alt="" />
-              </div>
-            </a>
-            <div class="work-content">
-              <div class="work-col-1">
-                <h2 class="w-title">Bindo Laro Cado</h2>
-                <div class="w-more">
-                  <span class="w-ctegory">Web Design</span> /
-                  <span class="w-date">18 Sep. 2017</span>
-                </div>
-              </div>
-              <div class="work-col-2">
-                <div class="w-like">
-                  <i class="fa-solid fa-circle-plus"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="work-box">
-            <a
-              href="assets/images/work-5.jpg"
-              data-gallery="portfolioGallery"
-              class="portfolio-lightbox"
-            >
-              <div class="work-img">
-                <img src="assets/images/work-5.jpg" alt="" />
-              </div>
-            </a>
-            <div class="work-content">
-              <div class="work-col-1">
-                <h2 class="w-title">Studio Lena Mado</h2>
-                <div class="w-more">
-                  <span class="w-ctegory">Web Design</span> /
-                  <span class="w-date">18 Sep. 2023</span>
-                </div>
-              </div>
-              <div class="work-col-2">
-                <div class="w-like">
-                  <i class="fa-solid fa-circle-plus"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="work-box">
-            <a
-              href="assets/images/work-6.jpg"
-              data-gallery="portfolioGallery"
-              class="portfolio-lightbox"
-            >
-              <div class="work-img">
-                <img src="assets/images/work-6.jpg" alt="" />
-              </div>
-            </a>
-            <div class="work-content">
-              <div class="work-col-1">
-                <h2 class="w-title">Studio Big Bang</h2>
-                <div class="w-more">
-                  <span class="w-ctegory">Web Design</span> /
-                  <span class="w-date">18 Sep. 2020</span>
-                </div>
-              </div>
-              <div class="work-col-2">
-                <div class="w-like">
-                  <i class="fa-solid fa-circle-plus"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    </main>
+    <footer>
+      <div class="copy-right">
+        <p>
+          © Copyright CodewithLeon. All Rights Reserved| Designed by Rurangwa
+          Leo
+        </p>
       </div>
-    </div>
-    <!-- ------------Testimonials Section --------- -->
-    <div id="testimonials" class="paralax-mf bg-image">
-      <div class="overlay-mf">
-        <div class="container">
-          <div class="row">
-            <div class="t-box">
-              <div class="t-img">
-                <img src="assets/images/testimonial-2.jpg" class="circle-img" />
-                <div class="author"><span>Xavi Alonso</span></div>
-              </div>
-              <div class="description">
-                <p>
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at
-                  sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="blog">
-      <div class="container">
-        <div class="title-box text-center">
-          <h3 class="title-a">BLOG</h3>
-          <p class="subtitle-a">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          </p>
-          <div class="line-mf"></div>
-        </div>
-        <div class="row-blog">
-          <div class="blog-card">
-            <div class="card-img">
-              <img src="assets/images/post-1.jpg" alt="" />
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Travel</h6>
-                </div>
-              </div>
-              <div class="card-content">
-                <h2>See more ideas about Travel</h2>
-              </div>
-              <div class="description">
-                <p>
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta
-                  dapibus. Praesent sapien massa, convallis a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <img
-                  src="assets/images/testimonial-2.jpg"
-                  alt=""
-                  class="avatar rounded-circle"
-                />
-                <span> Morgan Freeman</span>
-              </div>
-              <div class="post-date">
-                <i class="fa-regular fa-clock"></i><span>10 min</span>
-              </div>
-            </div>
-          </div>
-          <div class="blog-card">
-            <div class="card-img">
-              <img src="assets/images/post-2.jpg" alt="" />
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Health</h6>
-                </div>
-              </div>
-              <div class="card-content">
-                <h2>See more ideas about Travel</h2>
-              </div>
-              <div class="description">
-                <p>
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta
-                  dapibus. Praesent sapien massa, convallis a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <img
-                  src="assets/images/testimonial-2.jpg"
-                  alt=""
-                  class="avatar rounded-circle"
-                />
-                <span> Morgan Freeman</span>
-              </div>
-              <div class="post-date">
-                <i class="fa-regular fa-clock"></i><span>10 min</span>
-              </div>
-            </div>
-          </div>
-          <div class="blog-card">
-            <div class="card-img">
-              <img src="assets/images/post-3.jpg" alt="" />
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Web Design</h6>
-                </div>
-              </div>
-              <div class="card-content">
-                <h2>See more ideas about Travel</h2>
-              </div>
-              <div class="description">
-                <p>
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta
-                  dapibus. Praesent sapien massa, convallis a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <img
-                  src="assets/images/testimonial-2.jpg"
-                  alt=""
-                  class="avatar rounded-circle"
-                />
-                <span> Morgan Freeman</span>
-              </div>
-              <div class="post-date">
-                <i class="fa-regular fa-clock"></i><span>10 min</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- --------------- contact Section ------------ -->
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-1">
-            <div class="title-box">
-              <h5 class="title-left">Send message me</h5>
-            </div>
-            <div class="contact-form">
-              <form>
-                <div><input type="text" placeholder="Your Name" /></div>
-                <div><input type="text" placeholder="Your E-mail" /></div>
-                <div><input type="text" placeholder="Your Subject" /></div>
-                <div>
-                  <textarea
-                    name=""
-                    id=""
-                    cols="30"
-                    rows="10"
-                    placeholder="Your Message"
-                  ></textarea>
-                </div>
-                <div class="send-message"><button>Send Message</button></div>
-              </form>
-            </div>
-          </div>
-          <div class="col-2"></div>
-        </div>
-      </div>
-    </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
