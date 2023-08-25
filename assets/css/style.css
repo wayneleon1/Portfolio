@@ -4,13 +4,15 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
-
 :root {
     --bgcolor:#F5F5F5;
     --heading:#000000;
     --blue:#0078FF;
     --paragraph:#4E4E4E;
     --white:#fff;
+}
+html {
+  scroll-behavior: smooth;
 }
 Body {
     background:var(--bgcolor);
@@ -23,8 +25,8 @@ Body {
     background-size:cover;
     background-position: center;
     background-attachment: fixed;
-
 }
+
 #header .container {
     padding: 10px 10%;
     background: var(--heading);
@@ -37,7 +39,9 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
+nav .fa-solid {
+  color: var(--white);
+}
 .logo a{
     text-decoration: none;
     color: var(--white);
@@ -75,15 +79,14 @@ nav ul li a:hover::after{
 }
 .header-text {
     text-align: center;
-    margin: 10%;
+    margin-top: 10%;
     font-size: 40px;
     font-weight:400;
     color: var(--white);
 }
 .header-text h1 {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 72px;
-    margin-top: 20px;
 }
 
 /* --------------- About Section --------------- */
@@ -139,6 +142,7 @@ nav ul li a:hover::after{
   }
   
   .title-left {
+    font-weight: 600;
     font-size: 2rem;
     position: relative;
   }
@@ -185,7 +189,7 @@ nav ul li a:hover::after{
   .title-a {
     text-decoration: none;
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
   }
   
@@ -205,12 +209,12 @@ nav ul li a:hover::after{
   }
 /* ----------------- service card --------------- */
 .cards-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .service-box {
+    width: 350px;
     background-color: #fff;
     padding: 2.5rem 1.3rem;
     border-radius: 1rem;
@@ -425,7 +429,7 @@ nav ul li a:hover::after{
 .row-blog {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .blog-card{
@@ -513,15 +517,21 @@ nav ul li a:hover::after{
 }
 /* ----------------- contact ------------- */
 #contact {
-
+  border-top: solid 0.5px rgba(0, 0, 0, 0.1);
 }
 #contact .container {
   padding: 70px 10%;
 }
 #contact .row {
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 48px;
   background: var(--white);
+}
+.col-1, .col-2 {
+  padding: 16px;
+  flex-basis: 50%;
 }
 form input{
   width: 100%;
@@ -547,5 +557,135 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  border-radius: 17px;
+  border-radius: 32px;
+}
+button:hover{
+  background-color: #479cfd;
+}
+.send-message {
+  display: flex;
+  justify-content: center;
+}
+/* ------------ Footer -------- */
+.copy-right {
+  color: var(--white);
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: var(--blue);
+  font-weight: 400;
+  margin-top: 20px;
+}
+/* --------------- mobile version -------------- */
+nav .fa-solid {
+  display: none;
+}
+@media only screen and (max-width: 600px){
+  /* ------------ header ------------ */
+  .header-text {
+    margin-top: 30%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--white);
+}
+.header-text h1 {
+  font-weight: 600;
+  font-size: 45px;
+}
+/* ------------- navbar ----------- */
+nav .fa-solid {
+  display: block;
+  font-size: 25px;
+  color: var(--white);
+}
+nav ul {
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  right: -150px;
+  width: 150px;
+  height: 100vh;
+  padding-top: 50px; 
+  z-index: 2;
+  transition: right 0.5s;
+}
+nav ul li a {
+  color: var(--paragraph);
+}
+nav ul li a:hover {
+  color: var(--blue);
+}
+nav ul li {
+  display: block;
+  margin: 25px;
+}
+nav ul .fa-solid {
+  color: var(--paragraph);
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
+}
+/* --------- About ------------ */
+.about-col-1, .about-col-2 {
+  flex-basis: 100%;
+}
+.about-img,.about-info {
+  flex-basis: 100%;
+}
+.about-info{
+  margin-top: 10px;
+  font-size: 16px;
+}
+.about-img img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.title-left {
+  font-size: 1.3rem;
+}
+.title-s {
+  font-weight: 600;
+  color: #1e1e1e;
+  font-size: 1rem;
+}
+.title-box-2 {
+  margin-bottom: 2rem;
+}
+.lead {
+  font-size: 16px;
+}
+/* ------------- service ----------- */
+.service-box {
+  flex-basis: 100%;
+  margin-bottom: 1rem;
+}
+.title-box {
+  margin-bottom: 2rem;
+}
+
+.title-a {
+    font-size: 2rem;
+  }
+  /* -------------- Portfolio ------------- */
+  .work-box {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+}
+/* --------------- blog ---------------- */
+.blog-card{
+  flex-basis: 100%;
+  margin-bottom: 1rem;
+}
+/* ------------ contact ----------------- */
+.col-1, .col-2 {
+  flex-basis: 100%;
+}
+
+.copy-right {
+  font-size: 12px;
+}
 }
