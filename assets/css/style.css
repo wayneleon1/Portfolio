@@ -41,7 +41,7 @@ nav{
 }
 nav .fa-solid {
   color: var(--white);
-}
+} 
 .logo a{
     text-decoration: none;
     color: var(--white);
@@ -270,8 +270,64 @@ nav ul li a:hover::after{
     color: #4e4e4e;
   }
   /* ---------------------- counter ----------------- */
-
   #counter {
+    background-image: url(../images/counters-bg.jpg);
+    position: relative;
+    height: 432px;
+  }
+  .bg-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+  }
+ .overlay {
+  background: #0078FF;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+ }
+ #counter .container{
+  padding: 50px 10%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+ }
+ #counter .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .counter-box {
+   padding: 16px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .counter-ico {
+    margin-bottom: 1rem;
+  }
+  
+  .counter-ico .ico-circle {
+    height: 60px;
+    width: 60px;
+    line-height: 1.5;
+    box-shadow: 0 0 0 10px #cde1f8;
+  }
+  
+  .counter-num .counter {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  
+  /* #counter {
     background-image: url(../images/counters-bg.jpg);
     height: 432px;
   }
@@ -327,7 +383,7 @@ nav ul li a:hover::after{
   #counter .row {
     display: flex;
     justify-content: space-around;
-  }
+  } */
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -404,6 +460,7 @@ nav ul li a:hover::after{
 #testimonials {
   background-image: url(../images/overlay-bg.jpg);
   height: 432px;
+  position: relative;
 }
 #testimonials .container {
   padding: 70px 10%;
@@ -439,6 +496,13 @@ nav ul li a:hover::after{
   width: 350px;
   border: solid 0.5px rgba(0, 0, 0, 0.1);
 }
+.blog-card:hover{
+  transform: scale(1.1);
+}
+.blog-card {
+  transition: all 0.5s;
+}
+
 .card-img img {
   width: 100%;
 }
@@ -520,7 +584,7 @@ nav ul li a:hover::after{
   border-top: solid 0.5px rgba(0, 0, 0, 0.1);
 }
 #contact .container {
-  padding: 70px 10%;
+  padding: 30px 10%;
 }
 #contact .row {
   display: flex;
@@ -658,6 +722,9 @@ nav ul .fa-solid {
 .lead {
   font-size: 16px;
 }
+.progress-container {
+  height: 10px;
+}
 /* ------------- service ----------- */
 .service-box {
   flex-basis: 100%;
@@ -688,4 +755,5 @@ nav ul .fa-solid {
 .copy-right {
   font-size: 12px;
 }
+
 }
