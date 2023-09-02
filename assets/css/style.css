@@ -748,6 +748,9 @@ nav ul .fa-solid {
   margin-bottom: 1rem;
 }
 /* ------------ contact ----------------- */
+.contact-form {
+  margin-top: 60px;
+}
 .col-1, .col-2 {
   flex-basis: 100%;
 }
@@ -755,5 +758,10 @@ nav ul .fa-solid {
 .copy-right {
   font-size: 12px;
 }
-
+}
+#msg {
+  color: #61b752;
+  display: block;
+  margin-top: -30px;
+  font-weight: 500;
 }

@@ -367,15 +367,19 @@
               </a>
               <div class="work-content">
                 <div class="work-col-1">
-                  <h2 class="w-title">Lorem impsum dolor</h2>
+                  <h2 class="w-title">Country App Api</h2>
                   <div class="w-more">
                     <span class="w-ctegory">Web Design</span> /
-                    <span class="w-date">18 Sep. 2018</span>
+                    <span class="w-date">31 Aug. 2023</span>
                   </div>
                 </div>
                 <div class="work-col-2">
                   <div class="w-like">
-                    <i class="fa-solid fa-circle-plus"></i>
+                    <a href="https://wayneleon1.github.io/Countries_App/"
+                      ><iconify-icon
+                        icon="mingcute:external-link-line"
+                      ></iconify-icon>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -392,15 +396,19 @@
               </a>
               <div class="work-content">
                 <div class="work-col-1">
-                  <h2 class="w-title">Loreda Cuno Nere</h2>
+                  <h2 class="w-title">Figma Portfolio</h2>
                   <div class="w-more">
-                    <span class="w-ctegory">Web Design</span> /
-                    <span class="w-date">18 Sep. 2018</span>
+                    <span class="w-ctegory">Web site</span> /
+                    <span class="w-date">01 sep. 2023</span>
                   </div>
                 </div>
                 <div class="work-col-2">
                   <div class="w-like">
-                    <i class="fa-solid fa-circle-plus"></i>
+                    <a href="#"
+                      ><iconify-icon
+                        icon="mingcute:external-link-line"
+                      ></iconify-icon
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -417,15 +425,19 @@
               </a>
               <div class="work-content">
                 <div class="work-col-1">
-                  <h2 class="w-title">Mavrito Lana Dere</h2>
+                  <h2 class="w-title">To Do List</h2>
                   <div class="w-more">
-                    <span class="w-ctegory">Web Design</span> /
-                    <span class="w-date">18 Sep. 2018</span>
+                    <span class="w-ctegory">JavaScript App</span> /
+                    <span class="w-date">01 sep. 2023</span>
                   </div>
                 </div>
                 <div class="work-col-2">
                   <div class="w-like">
-                    <i class="fa-solid fa-circle-plus"></i>
+                    <a href="https://wayneleon1.github.io/Task_List/"
+                      ><iconify-icon
+                        icon="mingcute:external-link-line"
+                      ></iconify-icon
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -450,7 +462,9 @@
                 </div>
                 <div class="work-col-2">
                   <div class="w-like">
-                    <i class="fa-solid fa-circle-plus"></i>
+                    <iconify-icon
+                      icon="mingcute:external-link-line"
+                    ></iconify-icon>
                   </div>
                 </div>
               </div>
@@ -475,7 +489,9 @@
                 </div>
                 <div class="work-col-2">
                   <div class="w-like">
-                    <i class="fa-solid fa-circle-plus"></i>
+                    <iconify-icon
+                      icon="mingcute:external-link-line"
+                    ></iconify-icon>
                   </div>
                 </div>
               </div>
@@ -500,7 +516,9 @@
                 </div>
                 <div class="work-col-2">
                   <div class="w-like">
-                    <i class="fa-solid fa-circle-plus"></i>
+                    <iconify-icon
+                      icon="mingcute:external-link-line"
+                    ></iconify-icon>
                   </div>
                 </div>
               </div>
@@ -660,14 +678,42 @@
                 <h5 class="title-left">Send message me</h5>
               </div>
               <div class="contact-form">
-                <form>
-                  <div><input type="text" placeholder="Your Name" /></div>
-                  <div><input type="text" placeholder="Your E-mail" /></div>
-                  <div><input type="text" placeholder="Your Subject" /></div>
+                <span id="msg"></span>
+                <form name="submit-to-google-sheet">
                   <div>
-                    <textarea placeholder="Your Message"></textarea>
+                    <input
+                      type="text"
+                      name="Name"
+                      placeholder="Your Name"
+                      required=""
+                    />
                   </div>
-                  <div class="send-message"><button>Send Message</button></div>
+                  <div>
+                    <input
+                      type="email"
+                      name="Email"
+                      placeholder="Your E-mail"
+                      required=""
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      name="Subject"
+                      placeholder="Your Subject"
+                      required=""
+                    />
+                  </div>
+                  <div>
+                    <textarea
+                      name="Message"
+                      placeholder="Your Message"
+                      required=""
+                    ></textarea>
+                  </div>
+                  <div class="send-message">
+                    <button type="submit">Send Message</button>
+                  </div>
                 </form>
               </div>
             </div>
@@ -689,5 +735,25 @@
       </div>
     </footer>
     <script src="assets/js/main.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzfnt1dvNFb4fMw5Lq3G5wrLaniNsLD972QMuNxX6hInbDeRHHzdrIoLRoWBM6OgFMv/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfully !";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   </body>
 </html>
